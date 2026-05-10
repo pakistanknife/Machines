@@ -91,3 +91,4 @@ Allow: /
 
 # Sitemaps and machine-readable index
 Sitemap: https://pakistanknife.github.io/Machines/sitemap.xml
+Sitemap: https://pakistanknife.github.io/Machines/sitemap-machines.xml
