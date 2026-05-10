@@ -43,18 +43,30 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/style.css">
 
-  <!-- Schema.org: LocalBusiness -->
+  <!-- Performance: preload LCP image, dns-prefetch external -->
+  <link rel="preload" as="image" href="images/wire-cut-edm-cnc.jpg" fetchpriority="high">
+  <link rel="dns-prefetch" href="//wa.me">
+
+  <!-- AI / LLM-friendly site summary -->
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM site summary">
+
+  <!-- Schema.org: LocalBusiness (enhanced with geo, hours, knowsAbout) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://pakistanknife.github.io/Machines/#business",
     "name": "Sialkot Industrial Machines",
-    "description": "Used industrial machines for sale in Sialkot, Pakistan. Wire Cut EDM CNC, Surface Grinder, Milling, Drill, Rectifier and more.",
+    "alternateName": "Sialkot Used Industrial Machines",
+    "slogan": "Direct from owner. Used industrial machines, ready to ship from Sialkot, Pakistan.",
+    "description": "Direct sale of inspected used industrial machines from Shahpura Road Industrial Area, Sialkot, Pakistan. Wire Cut EDM CNC, Surface Grinder, Milling, Drill, Rectifier and more. Owner-direct, no broker. Export available worldwide via Karachi port.",
     "image": "https://pakistanknife.github.io/Machines/images/og-cover.jpg",
+    "logo": "https://pakistanknife.github.io/Machines/images/og-cover.jpg",
     "url": "https://pakistanknife.github.io/Machines/",
     "telephone": "+923007166993",
     "priceRange": "$$",
+    "currenciesAccepted": "USD, EUR, PKR",
+    "paymentAccepted": "Bank transfer, Telegraphic Transfer (TT), Cash on collection",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Shahpura Road Industrial Area",
@@ -63,12 +75,92 @@
       "postalCode": "51310",
       "addressCountry": "PK"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.5151,
+      "longitude": 74.5560
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
     "areaServed": [
       { "@type": "Country", "name": "Pakistan" },
-      { "@type": "Place", "name": "Worldwide (export available)" }
+      { "@type": "Place", "name": "Worldwide (export available via Karachi port)" }
     ],
+    "knowsAbout": [
+      "Used industrial machines",
+      "Wire Cut EDM CNC",
+      "Surface grinding (rotary)",
+      "Multi-spindle drilling",
+      "Vibratory finishing / mass finishing",
+      "Industrial DC rectifiers / electroplating",
+      "Tool and cutter grinding",
+      "Horizontal and vertical milling",
+      "Surgical instrument manufacturing equipment",
+      "Cutlery manufacturing equipment",
+      "Industrial machine export from Pakistan"
+    ],
+    "makesOffer": { "@id": "https://pakistanknife.github.io/Machines/machines.json" },
     "inLanguage": ["en", "ur"],
     "sameAs": []
+  }
+  </script>
+
+  <!-- Schema.org: Organization (E-E-A-T signal) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://pakistanknife.github.io/Machines/#organization",
+    "name": "Sialkot Industrial Machines",
+    "url": "https://pakistanknife.github.io/Machines/",
+    "logo": "https://pakistanknife.github.io/Machines/images/og-cover.jpg",
+    "telephone": "+923007166993",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shahpura Road Industrial Area",
+      "addressLocality": "Sialkot",
+      "addressRegion": "Punjab",
+      "postalCode": "51310",
+      "addressCountry": "PK"
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+923007166993",
+      "contactType": "sales",
+      "areaServed": "Worldwide",
+      "availableLanguage": ["English", "Urdu"]
+    }]
+  }
+  </script>
+
+  <!-- Schema.org: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://pakistanknife.github.io/Machines/#website",
+    "name": "Sialkot Industrial Machines",
+    "url": "https://pakistanknife.github.io/Machines/",
+    "inLanguage": ["en", "ur"],
+    "publisher": { "@id": "https://pakistanknife.github.io/Machines/#organization" }
+  }
+  </script>
+
+  <!-- Schema.org: Speakable (voice search / Google Assistant) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".hero p.lead", "#faq summary", "#faq .answer p"]
+    }
   }
   </script>
 

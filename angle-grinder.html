@@ -37,6 +37,13 @@
 
   <link rel="stylesheet" href="assets/style.css">
 
+  <!-- Performance: preload LCP image, dns-prefetch external -->
+  <link rel="preload" as="image" href="images/angle-grinder.jpg" fetchpriority="high">
+  <link rel="dns-prefetch" href="//wa.me">
+
+  <!-- AI / LLM-friendly site summary -->
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM site summary">
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -86,8 +93,11 @@
     "itemCondition": "https://schema.org/UsedCondition",
     "seller": {
       "@type": "Organization",
+      "@id": "https://pakistanknife.github.io/Machines/#organization",
       "name": "Sialkot Industrial Machines",
       "telephone": "+92 300 7166993",
+      "url": "https://pakistanknife.github.io/Machines/",
+      "logo": "https://pakistanknife.github.io/Machines/images/og-cover.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Shahpura Road Industrial Area",
@@ -95,6 +105,24 @@
         "addressRegion": "Punjab",
         "postalCode": "51310",
         "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.5151,
+        "longitude": 74.556
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
       }
     }
   }

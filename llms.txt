@@ -1,0 +1,44 @@
+# Sialkot Industrial Machines
+
+> Direct sale of inspected used industrial machines from Shahpura Road Industrial Area, Sialkot, Punjab, Pakistan. WhatsApp +92 300 7166993. Owner-direct, no broker. Export available worldwide via Karachi port.
+
+Sialkot Industrial Machines is a single-owner business reselling production-grade industrial machinery from a working facility in Sialkot — Pakistan's hub for surgical instruments, cutlery, sports goods, and precision tooling. Every machine on this site is in working condition, inspected, and offered with a live video walk-through on WhatsApp before any commitment. Pricing is on request via WhatsApp; international buyers handle shipping through standard freight forwarders at Karachi port.
+
+## Contact
+
+- WhatsApp / Phone: +92 300 7166993
+- Address: Shahpura Road Industrial Area, Sialkot, Punjab 51310, Pakistan
+- Hours: Monday to Saturday, 9:00 AM – 7:00 PM (Pakistan Standard Time, UTC+5)
+- Website: https://pakistanknife.github.io/Machines/
+
+## Machines for sale (8 units, in stock)
+
+- [Wire Cut EDM CNC](https://pakistanknife.github.io/Machines/wire-cut-edm-cnc.html): Precision wire-cut electrical discharge machine with full CNC control. Cuts hardened steel, tungsten carbide, titanium and exotic alloys to ±0.005 mm accuracy. Featured machine.
+- [Rotary Product Surface Grinder](https://pakistanknife.github.io/Machines/rotary-surface-grinder.html): Production-grade rotary surface grinder rated 150 pieces per hour. Magnetic chuck, Ra 0.4 µm achievable surface finish. Ideal for surgical instruments and cutting tools.
+- [Big Capacity Vibrator](https://pakistanknife.github.io/Machines/vibrator.html): Heavy-duty industrial vibratory finisher / deburring machine, big-bowl class. Wet or dry finishing. Standard in surgical-instrument and cutlery industries.
+- [5 Heads Drill Machine — Mitsubishi](https://pakistanknife.github.io/Machines/drill-mitsubishi.html): Mitsubishi-built 5-spindle multi-head drilling machine for simultaneous multi-hole drilling. Ideal for series production.
+- [1000 Amp Rectifier](https://pakistanknife.github.io/Machines/rectifier-1000a.html): Industrial DC rectifier up to 1000 A, 6–18 V. Suitable for electroplating (chrome, nickel, copper, zinc, brass), anodizing, electroforming, electrowinning.
+- [Adjustable Angle Grinder](https://pakistanknife.github.io/Machines/angle-grinder.html): Industrial adjustable-angle tool grinder for sharpening drill bits, milling cutters, lathe bits, planer tools, taps, and reamers. Multi-axis tilt.
+- [Horizontal Milling Machine](https://pakistanknife.github.io/Machines/horizontal-milling.html): Heavy-duty horizontal mill, spindle parallel to table. Slot, gang, straddle, gear-form milling.
+- [Vertical Milling Machine](https://pakistanknife.github.io/Machines/vertical-milling.html): Versatile vertical mill, tilting head. Tool & die, mold, surgical instrument and prototype work.
+
+## Industries served
+
+Surgical instrument manufacturing, cutlery and edge tools, tool & die shops, mold making, aerospace job shops, medical device production, automotive components, jewelry tooling, prototype machine shops.
+
+## Frequently asked
+
+- Are these machines used or new? All are used (second-hand) industrial machines, inspected and in working condition.
+- Can I see them before buying? Yes — on-site visits by appointment in Sialkot, or live WhatsApp video walk-through.
+- Do you ship internationally? Yes — sea container shipment from Karachi port via established freight forwarders.
+- Payment? Bank transfer or cash for domestic Pakistani buyers; telegraphic transfer (TT) with deposit + balance against shipping documents for international buyers.
+- Why Sialkot? World leader in surgical instruments and a major center for cutlery, sports goods, and precision tooling — strong local industrial ecosystem with parts and service support.
+
+## Languages
+
+- English: https://pakistanknife.github.io/Machines/index.html
+- Urdu: https://pakistanknife.github.io/Machines/urdu.html
+
+## Structured data
+
+The site exposes JSON-LD schema.org markup for: LocalBusiness, Organization, WebSite, ItemList, Product (with Offers and UsedCondition), BreadcrumbList, FAQPage. A machine-readable index of all listings is available at https://pakistanknife.github.io/Machines/machines.json
