@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Used Industrial Machines for Sale — Sialkot Industrial Machines",
-  "description": "Direct-from-owner used industrial machines for sale in Sialkot, Pakistan. Inspected, working condition, export available worldwide.",
+  "name": "Used Industrial Machines for Sale — Sialkot Used Machinery Co.",
+  "description": "Direct-from-owner used industrial machines for sale in Sialkot, Pakistan. Inspected, working condition. Delivery across Punjab to Lahore, Gujranwala, Gujrat, Jhelum, Sheikhupura and all major cities within ~120 km.",
   "url": "https://pakistan-machines-for-sale.netlify.app/",
   "numberOfItems": 8,
   "inLanguage": ["en", "ur"],
   "provider": {
     "@type": "LocalBusiness",
-    "name": "Sialkot Industrial Machines",
+    "name": "Sialkot Used Machinery Co.",
     "telephone": "+923007166993",
     "address": {
       "@type": "PostalAddress",
@@ -47,9 +47,9 @@
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceCurrency": "USD",
+          "priceCurrency": "PKR",
           "price": "0",
-          "priceSpecification": { "@type": "PriceSpecification", "valueAddedTaxIncluded": false, "priceCurrency": "USD" }
+          "priceSpecification": { "@type": "PriceSpecification", "valueAddedTaxIncluded": false, "priceCurrency": "PKR" }
         }
       }
     },
@@ -65,7 +65,7 @@
         "category": "Industrial > Machine Tools > Grinders",
         "applicationCategory": ["Surgical instruments", "Cutlery", "Cutting tools", "Bearing components", "Automotive flat parts"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
       }
     },
     {
@@ -81,7 +81,7 @@
         "category": "Industrial > Mass Finishing > Vibratory Finishers",
         "applicationCategory": ["Surgical instruments", "Cutlery polishing", "Casting deburr", "Jewelry", "Automotive small parts"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
       }
     },
     {
@@ -97,7 +97,7 @@
         "brand": { "@type": "Brand", "name": "Mitsubishi" },
         "applicationCategory": ["Series production", "Surgical instrument hole patterns", "Sheet metal hinge plates", "Automotive bracketry"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
       }
     },
     {
@@ -113,7 +113,7 @@
         "category": "Industrial > Electrochemistry > Rectifiers",
         "applicationCategory": ["Electroplating", "Anodizing", "Electroforming", "Electrowinning", "Surgical instrument plating"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
       }
     },
     {
@@ -129,7 +129,7 @@
         "category": "Industrial > Machine Tools > Tool & Cutter Grinders",
         "applicationCategory": ["Tool sharpening", "Cutter regrinding", "Profile grinding", "Tool & die maintenance"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
       }
     },
     {
@@ -144,7 +144,7 @@
         "category": "Industrial > Machine Tools > Mills",
         "applicationCategory": ["Slot milling", "Gear cutting", "Ferrule production", "Heavy fixture machining", "Gang milling"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
       }
     },
     {
@@ -159,7 +159,7 @@
         "category": "Industrial > Machine Tools > Mills",
         "applicationCategory": ["Tool & die", "Mold building", "Surgical instrument milling", "Prototype machining", "Jewelry tooling"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "USD", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
       }
     }
   ]

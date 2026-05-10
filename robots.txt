@@ -1,4 +1,4 @@
-# Sialkot Industrial Machines — robots.txt
+# Sialkot Used Machinery Co. — robots.txt
 # Site: https://pakistan-machines-for-sale.netlify.app/
 
 # All standard search engine bots
