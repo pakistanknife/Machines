@@ -9,18 +9,18 @@ Sialkot Industrial Machines is a single-owner business reselling production-grad
 - WhatsApp / Phone: +92 300 7166993
 - Address: Shahpura Road Industrial Area, Sialkot, Punjab 51310, Pakistan
 - Hours: Monday to Saturday, 9:00 AM – 7:00 PM (Pakistan Standard Time, UTC+5)
-- Website: https://pakistanknife.github.io/Machines/
+- Website: https://pakistan-machines-for-sale.netlify.app/
 
 ## Machines for sale (8 units, in stock)
 
-- [Wire Cut EDM CNC](https://pakistanknife.github.io/Machines/wire-cut-edm-cnc.html): Precision wire-cut electrical discharge machine with full CNC control. Cuts hardened steel, tungsten carbide, titanium and exotic alloys to ±0.005 mm accuracy. Featured machine.
-- [Rotary Product Surface Grinder](https://pakistanknife.github.io/Machines/rotary-surface-grinder.html): Production-grade rotary surface grinder rated 150 pieces per hour. Magnetic chuck, Ra 0.4 µm achievable surface finish. Ideal for surgical instruments and cutting tools.
-- [Big Capacity Vibrator](https://pakistanknife.github.io/Machines/vibrator.html): Heavy-duty industrial vibratory finisher / deburring machine, big-bowl class. Wet or dry finishing. Standard in surgical-instrument and cutlery industries.
-- [5 Heads Drill Machine — Mitsubishi](https://pakistanknife.github.io/Machines/drill-mitsubishi.html): Mitsubishi-built 5-spindle multi-head drilling machine for simultaneous multi-hole drilling. Ideal for series production.
-- [1000 Amp Rectifier](https://pakistanknife.github.io/Machines/rectifier-1000a.html): Industrial DC rectifier up to 1000 A, 6–18 V. Suitable for electroplating (chrome, nickel, copper, zinc, brass), anodizing, electroforming, electrowinning.
-- [Adjustable Angle Grinder](https://pakistanknife.github.io/Machines/angle-grinder.html): Industrial adjustable-angle tool grinder for sharpening drill bits, milling cutters, lathe bits, planer tools, taps, and reamers. Multi-axis tilt.
-- [Horizontal Milling Machine](https://pakistanknife.github.io/Machines/horizontal-milling.html): Heavy-duty horizontal mill, spindle parallel to table. Slot, gang, straddle, gear-form milling.
-- [Vertical Milling Machine](https://pakistanknife.github.io/Machines/vertical-milling.html): Versatile vertical mill, tilting head. Tool & die, mold, surgical instrument and prototype work.
+- [Wire Cut EDM CNC](https://pakistan-machines-for-sale.netlify.app/wire-cut-edm-cnc.html): Precision wire-cut electrical discharge machine with full CNC control. Cuts hardened steel, tungsten carbide, titanium and exotic alloys to ±0.005 mm accuracy. Featured machine.
+- [Rotary Product Surface Grinder](https://pakistan-machines-for-sale.netlify.app/rotary-surface-grinder.html): Production-grade rotary surface grinder rated 150 pieces per hour. Magnetic chuck, Ra 0.4 µm achievable surface finish. Ideal for surgical instruments and cutting tools.
+- [Big Capacity Vibrator](https://pakistan-machines-for-sale.netlify.app/vibrator.html): Heavy-duty industrial vibratory finisher / deburring machine, big-bowl class. Wet or dry finishing. Standard in surgical-instrument and cutlery industries.
+- [5 Heads Drill Machine — Mitsubishi](https://pakistan-machines-for-sale.netlify.app/drill-mitsubishi.html): Mitsubishi-built 5-spindle multi-head drilling machine for simultaneous multi-hole drilling. Ideal for series production.
+- [1000 Amp Rectifier](https://pakistan-machines-for-sale.netlify.app/rectifier-1000a.html): Industrial DC rectifier up to 1000 A, 6–18 V. Suitable for electroplating (chrome, nickel, copper, zinc, brass), anodizing, electroforming, electrowinning.
+- [Adjustable Angle Grinder](https://pakistan-machines-for-sale.netlify.app/angle-grinder.html): Industrial adjustable-angle tool grinder for sharpening drill bits, milling cutters, lathe bits, planer tools, taps, and reamers. Multi-axis tilt.
+- [Horizontal Milling Machine](https://pakistan-machines-for-sale.netlify.app/horizontal-milling.html): Heavy-duty horizontal mill, spindle parallel to table. Slot, gang, straddle, gear-form milling.
+- [Vertical Milling Machine](https://pakistan-machines-for-sale.netlify.app/vertical-milling.html): Versatile vertical mill, tilting head. Tool & die, mold, surgical instrument and prototype work.
 
 ## Industries served
 
@@ -36,9 +36,9 @@ Surgical instrument manufacturing, cutlery and edge tools, tool & die shops, mol
 
 ## Languages
 
-- English: https://pakistanknife.github.io/Machines/index.html
-- Urdu: https://pakistanknife.github.io/Machines/urdu.html
+- English: https://pakistan-machines-for-sale.netlify.app/index.html
+- Urdu: https://pakistan-machines-for-sale.netlify.app/urdu.html
 
 ## Structured data
 
-The site exposes JSON-LD schema.org markup for: LocalBusiness, Organization, WebSite, ItemList, Product (with Offers and UsedCondition), BreadcrumbList, FAQPage. A machine-readable index of all listings is available at https://pakistanknife.github.io/Machines/machines.json
+The site exposes JSON-LD schema.org markup for: LocalBusiness, Organization, WebSite, ItemList, Product (with Offers and UsedCondition), BreadcrumbList, FAQPage. A machine-readable index of all listings is available at https://pakistan-machines-for-sale.netlify.app/machines.json

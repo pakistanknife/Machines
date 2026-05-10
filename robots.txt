@@ -1,5 +1,5 @@
 # Sialkot Industrial Machines — robots.txt
-# Site: https://pakistanknife.github.io/Machines/
+# Site: https://pakistan-machines-for-sale.netlify.app/
 
 # All standard search engine bots
 User-agent: *
@@ -90,5 +90,5 @@ User-agent: Mistral-AI
 Allow: /
 
 # Sitemaps and machine-readable index
-Sitemap: https://pakistanknife.github.io/Machines/sitemap.xml
-Sitemap: https://pakistanknife.github.io/Machines/sitemap-machines.xml
+Sitemap: https://pakistan-machines-for-sale.netlify.app/sitemap.xml
+Sitemap: https://pakistan-machines-for-sale.netlify.app/sitemap-machines.xml
