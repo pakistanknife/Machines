@@ -1,6 +1,0 @@
-# Netlify _redirects
-# Auto-redirect Pakistani visitors to the Urdu version of the homepage.
-# Other visitors (or those who explicitly visit /index.html) keep English.
-
-/                Country=pk  /urdu.html  302
-/index.html      Country=pk  /urdu.html  302

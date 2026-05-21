@@ -1,5 +1,5 @@
 # Sialkot Used Machinery Co. — robots.txt
-# Site: https://pakistan-machines-for-sale.netlify.app/
+# Site: https://machines-for-sale.pk/
 
 # All standard search engine bots
 User-agent: *
@@ -90,5 +90,5 @@ User-agent: Mistral-AI
 Allow: /
 
 # Sitemaps and machine-readable index
-Sitemap: https://pakistan-machines-for-sale.netlify.app/sitemap.xml
-Sitemap: https://pakistan-machines-for-sale.netlify.app/sitemap-machines.xml
+Sitemap: https://machines-for-sale.pk/sitemap.xml
+Sitemap: https://machines-for-sale.pk/sitemap-machines.xml
