@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
-          server-dir: /www/
+          server-dir: /machines-for-sale/
           local-dir: ./
           dangerous-clean-slate: false
           log-level: minimal
