@@ -11,6 +11,9 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.machines-for-sale\.pk$ [NC]
 RewriteRule ^(.*)$ https://machines-for-sale.pk/$1 [R=301,L]
 
+# ---------- index.html → / ----------
+RewriteRule ^index\.html$ / [R=301,L]
+
 # ---------- DirectoryIndex ----------
 DirectoryIndex index.html urdu.html
 
@@ -52,6 +55,11 @@ ErrorDocument 404 /404.html
   <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|css|js)$">
     Header set Cache-Control "public, max-age=15552000, immutable"
   </FilesMatch>
+
+  # Content-Language signals for Google (hreflang reinforcement)
+  SetEnvIf Request_URI "^/ur/" LANG_UR=1
+  SetEnvIf Request_URI "^/urdu\.html$" LANG_UR=1
+  Header set Content-Language "ur" env=LANG_UR
 </IfModule>
 
 # ---------- MIME types ----------

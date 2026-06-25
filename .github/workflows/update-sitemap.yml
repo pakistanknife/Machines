@@ -1,0 +1,30 @@
+name: Update Sitemap Dates
+
+on:
+  schedule:
+    - cron: '0 6 1,15 * *'   # 1st and 15th of each month at 06:00 UTC
+  workflow_dispatch:           # manual trigger from GitHub Actions tab
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update lastmod dates in both sitemaps
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>$TODAY</lastmod>|g" sitemap.xml
+          sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>$TODAY</lastmod>|g" sitemap-machines.xml
+          echo "Updated to $TODAY"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml sitemap-machines.xml
+          git diff --staged --quiet || git commit -m "chore: sitemap lastmod → $(date -u +%Y-%m-%d)"
+          git push

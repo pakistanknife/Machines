@@ -1,4 +1,4 @@
-{
+﻿{
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Used Industrial Machines for Sale — Sialkot Used Machinery Co.",
@@ -46,10 +46,7 @@
         "itemCondition": "https://schema.org/UsedCondition",
         "offers": {
           "@type": "Offer",
-          "availability": "https://schema.org/InStock",
-          "priceCurrency": "PKR",
-          "price": "0",
-          "priceSpecification": { "@type": "PriceSpecification", "valueAddedTaxIncluded": false, "priceCurrency": "PKR" }
+          "availability": "https://schema.org/InStock"
         }
       }
     },
@@ -65,7 +62,7 @@
         "category": "Industrial > Machine Tools > Grinders",
         "applicationCategory": ["Surgical instruments", "Cutlery", "Cutting tools", "Bearing components", "Automotive flat parts"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
       }
     },
     {
@@ -81,7 +78,7 @@
         "category": "Industrial > Mass Finishing > Vibratory Finishers",
         "applicationCategory": ["Surgical instruments", "Cutlery polishing", "Casting deburr", "Jewelry", "Automotive small parts"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
       }
     },
     {
@@ -97,7 +94,7 @@
         "brand": { "@type": "Brand", "name": "Mitsubishi" },
         "applicationCategory": ["Series production", "Surgical instrument hole patterns", "Sheet metal hinge plates", "Automotive bracketry"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
       }
     },
     {
@@ -113,7 +110,7 @@
         "category": "Industrial > Electrochemistry > Rectifiers",
         "applicationCategory": ["Electroplating", "Anodizing", "Electroforming", "Electrowinning", "Surgical instrument plating"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
       }
     },
     {
@@ -129,7 +126,7 @@
         "category": "Industrial > Machine Tools > Tool & Cutter Grinders",
         "applicationCategory": ["Tool sharpening", "Cutter regrinding", "Profile grinding", "Tool & die maintenance"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
       }
     },
     {
@@ -144,7 +141,7 @@
         "category": "Industrial > Machine Tools > Mills",
         "applicationCategory": ["Slot milling", "Gear cutting", "Ferrule production", "Heavy fixture machining", "Gang milling"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
       }
     },
     {
@@ -159,7 +156,7 @@
         "category": "Industrial > Machine Tools > Mills",
         "applicationCategory": ["Tool & die", "Mold building", "Surgical instrument milling", "Prototype machining", "Jewelry tooling"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "PKR", "price": "0" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
       }
     }
   ]

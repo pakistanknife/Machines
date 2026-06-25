@@ -17,3 +17,6 @@ desktop.ini
 
 # Build / generator scratch
 _build/
+
+# Node
+node_modules/
