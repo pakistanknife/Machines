@@ -12,7 +12,7 @@ RewriteCond %{HTTP_HOST} ^www\.machines-for-sale\.pk$ [NC]
 RewriteRule ^(.*)$ https://machines-for-sale.pk/$1 [R=301,L]
 
 # ---------- index.html → / ----------
-RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^index\.html$ https://machines-for-sale.pk/ [R=301,L]
 
 # ---------- DirectoryIndex ----------
 DirectoryIndex index.html urdu.html
