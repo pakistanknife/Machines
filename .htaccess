@@ -1,6 +1,9 @@
 # Apache config for OVH Web Hosting (machines-for-sale.pk)
 # Tested with .ovhconfig: app.engine=php / container.image=php-5.6
 
+# ---------- Block node_modules ----------
+RedirectMatch 404 ^/node_modules/.*$
+
 # ---------- Force HTTPS ----------
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
