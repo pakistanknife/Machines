@@ -277,6 +277,46 @@ button { font: inherit; }
   text-transform: uppercase;
   z-index: 1;
 }
+.badge-instock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(22, 163, 74, 0.12);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.28);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.6rem;
+}
+.faq-roman-urdu { margin-top: 2rem; }
+.faq-roman-urdu .faq-lang-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.price-block {
+  background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.price-block h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.82rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+.price-block p { margin: 0 0 0.85rem; font-size: 0.92rem; color: var(--text); }
 .hero-image-caption {
   position: absolute;
   left: 1rem;
