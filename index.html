@@ -35,13 +35,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f97316'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='18' font-weight='800' fill='%230b1220' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preload" as="style" href="assets/style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/style.css"></noscript>
 
   <!-- Performance: preload LCP image, dns-prefetch external -->
   <link rel="preload" as="image" href="images/wire-cut-edm-cnc.jpg" fetchpriority="high">
@@ -576,7 +572,15 @@
         <h3>Find us &mdash; Shahpura Road Industrial Area, Sialkot</h3>
         <p>Drop in by appointment, or get directions from your city. We are easy to reach from Lahore (~120 km), Gujranwala (~35 km), Wazirabad (~30 km) and Gujrat (~70 km).</p>
         <div class="map-frame">
-          <iframe
+          <div id="map-ph" onclick="loadMap(this)" style="cursor:pointer;min-height:300px;background:var(--surface);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;border:1px solid var(--line);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+            <div style="text-align:center;padding:0 16px;">
+              <div style="font-weight:600;color:var(--text);margin-bottom:4px;">Shahpura Road Industrial Area, Sialkot</div>
+              <div style="font-size:13px;color:var(--muted);">Click to load interactive map</div>
+            </div>
+          </div>
+          <script>function loadMap(el){el.outerHTML='<iframe src="https://www.google.com/maps?q=Shahpura+Road+Industrial+Area,+Sialkot,+Punjab,+Pakistan&output=embed&z=14" width="100%" height="400" style="border:0;display:block;border-radius:var(--radius);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sialkot Used Machinery Co. location"></iframe>';}</script>
+          <noscript><iframe
             src="https://www.google.com/maps?q=Shahpura+Road+Industrial+Area,+Sialkot,+Punjab,+Pakistan&output=embed&z=14"
             width="100%" height="400"
             style="border:0; display: block;"
@@ -584,7 +588,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="Sialkot Used Machinery Co. — Shahpura Road Industrial Area, Sialkot map"
-          ></iframe>
+          ></iframe></noscript>
         </div>
         <p style="margin-top: 0.75rem; font-size: 0.9rem;">
           <a href="https://www.google.com/maps/dir/?api=1&destination=Shahpura+Road+Industrial+Area,+Sialkot,+Punjab,+Pakistan" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 600;">
