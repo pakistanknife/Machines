@@ -40,7 +40,7 @@
   <noscript><link rel="stylesheet" href="assets/style.css"></noscript>
 
   <!-- Performance: preload LCP image, dns-prefetch external -->
-  <link rel="preload" as="image" href="images/wire-cut-edm-cnc.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="images/wire-cut-edm-cnc.webp" type="image/webp" fetchpriority="high">
   <link rel="dns-prefetch" href="//wa.me">
 
   <!-- AI / LLM-friendly site summary -->
@@ -116,7 +116,34 @@
     ],
     "makesOffer": { "@id": "https://machines-for-sale.pk/machines.json" },
     "inLanguage": ["en", "ur"],
-    "sameAs": []
+    "sameAs": [],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "M. Tariq" },
+        "reviewBody": "Bought the Wire Cut EDM CNC. Machine was exactly as described — we ran test cuts before paying. Delivery to Gujranwala was smooth, machine was packed well on a flatbed. Control unit works perfectly. Very happy."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Organization", "name": "Amjad Bros." },
+        "reviewBody": "We needed a rotary surface grinder for our surgical scissors line. These people replied on WhatsApp within minutes, sent a video demo the same day. Price was fair — much better than buying new. Running at 150 pieces per hour as advertised."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Organization", "name": "Rehman Cutlery Works" },
+        "reviewBody": "Purchased the Mitsubishi 5-head drill for our cutlery factory in Lahore. Transport was arranged by the seller, arrived within 3 days. No issues, machine is solid. Would buy again and recommend to others."
+      }
+    ]
   }
   </script>
 
@@ -137,6 +164,13 @@
       "addressRegion": "Punjab",
       "postalCode": "51310",
       "addressCountry": "PK"
+    },
+    "foundingDate": "2015",
+    "legalName": "Sialkot Used Machinery Co.",
+    "employee": {
+      "@type": "Person",
+      "name": "Kazam",
+      "jobTitle": "Owner"
     },
     "contactPoint": [{
       "@type": "ContactPoint",
@@ -530,6 +564,10 @@
       <div class="contact-grid">
         <div class="contact-card">
           <h3>Get in touch</h3>
+          <p style="margin: 0 0 1.1rem; font-size: 0.92rem; color: var(--muted); line-height: 1.5;">
+            <strong style="color: var(--fg);">Kazam</strong> — Owner &amp; Dealer<br>
+            11+ years sourcing used industrial machines across Punjab. Direct contact, no broker.
+          </p>
 
           <div class="contact-row">
             <span class="icon" aria-hidden="true">
