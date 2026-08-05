@@ -1,110 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://machines-for-sale.pk/</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/urdu.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/wire-cut-edm-cnc.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/wire-cut-edm-cnc.jpg</image:loc>
+      <image:title>Used Wire Cut EDM CNC Machine for Sale — Sialkot, Pakistan</image:title>
+      <image:caption>Precision wire-cut EDM CNC, cuts hardened steel and carbide to ±0.005 mm. Available at Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/rotary-surface-grinder.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/rotary-surface-grinder.jpg</image:loc>
+      <image:title>Used Rotary Surface Grinder 150 pcs/hr for Sale — Sialkot, Pakistan</image:title>
+      <image:caption>Production-grade rotary surface grinder rated at 150 pieces per hour. Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/vibrator.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/vibrator.jpg</image:loc>
+      <image:title>Used Industrial Vibratory Finishing Machine — Sialkot, Pakistan</image:title>
+      <image:caption>High-capacity vibratory bowl finisher for deburring and polishing metal parts. Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/drill-mitsubishi.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/drill-mitsubishi.jpg</image:loc>
+      <image:title>Used Mitsubishi 5-Head Drill Machine for Sale — Sialkot, Pakistan</image:title>
+      <image:caption>Multi-spindle Mitsubishi drill for simultaneous 5-hole drilling on sheet metal. Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/rectifier-1000a.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/rectifier-1000a.jpg</image:loc>
+      <image:title>Used 1000A DC Rectifier for Electroplating — Sialkot, Pakistan</image:title>
+      <image:caption>Industrial 1000 A rectifier for electroplating, anodising and electrolytic processes. Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/angle-grinder.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/angle-grinder.jpg</image:loc>
+      <image:title>Used Adjustable Angle Tool Grinder for Sale — Sialkot, Pakistan</image:title>
+      <image:caption>Versatile tool and cutter grinder — sharpens drill bits, milling cutters and lathe tools. Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/horizontal-milling.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/horizontal-milling.jpg</image:loc>
+      <image:title>Used Horizontal Milling Machine (Sold) — Sialkot, Pakistan</image:title>
+      <image:caption>Heavy-duty horizontal mill for slot milling, gear cutting and gang milling. Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/vertical-milling.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://machines-for-sale.pk/images/vertical-milling.jpg</image:loc>
+      <image:title>Used Vertical Milling Machine for Sale — Sialkot, Pakistan</image:title>
+      <image:caption>Versatile vertical milling machine for tool, die, mold and surgical instrument work. Sialkot Used Machinery Co.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/wire-cut-edm-cnc.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/rotary-surface-grinder.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/vibrator.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/drill-mitsubishi.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/rectifier-1000a.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/angle-grinder.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/horizontal-milling.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/vertical-milling.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
