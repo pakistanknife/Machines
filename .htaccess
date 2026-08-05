@@ -1,8 +1,9 @@
 # Apache config for OVH Web Hosting (machines-for-sale.pk)
 # Tested with .ovhconfig: app.engine=php / container.image=php-5.6
 
-# ---------- Block node_modules ----------
+# ---------- Block node_modules and package files ----------
 RedirectMatch 404 ^/node_modules/.*$
+RedirectMatch 404 ^/package(-lock)?\.json$
 
 # ---------- Force HTTPS ----------
 RewriteEngine On
@@ -23,7 +24,13 @@ DirectoryIndex index.html urdu.html
 # ---------- Custom 404 ----------
 ErrorDocument 404 /404.html
 
-# ---------- Compression (gzip) ----------
+# ---------- Compression (Brotli preferred, gzip fallback) ----------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS application/xml application/rss+xml application/atom+xml
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
   AddOutputFilterByType DEFLATE application/javascript application/json

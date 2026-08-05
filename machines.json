@@ -141,7 +141,7 @@
         "category": "Industrial > Machine Tools > Mills",
         "applicationCategory": ["Slot milling", "Gear cutting", "Ferrule production", "Heavy fixture machining", "Gang milling"],
         "itemCondition": "https://schema.org/UsedCondition",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" }
+        "offers": { "@type": "Offer", "availability": "https://schema.org/SoldOut" }
       }
     },
     {
