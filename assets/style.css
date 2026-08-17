@@ -6,7 +6,7 @@
   --line: rgba(255, 255, 255, 0.08);
   --line-strong: rgba(255, 255, 255, 0.16);
   --text: #e6ecf5;
-  --muted: #93a3bd;
+  --muted: #a4b8cc;
   --accent: #f97316;
   --accent-2: #ea580c;
   --accent-soft: rgba(249, 115, 22, 0.14);
@@ -672,6 +672,8 @@ button { font: inherit; }
 /* Long-form prose */
 .prose { max-width: 70ch; color: var(--text); }
 .prose p { margin: 0 0 1.1rem; line-height: 1.8; color: var(--text); }
+.prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.prose a:hover { opacity: 0.85; }
 .prose h2 {
   font-size: clamp(1.4rem, 2.4vw, 1.8rem);
   margin: 2.6rem 0 1.1rem;
@@ -745,6 +747,7 @@ button { font: inherit; }
 }
 .faq .answer p { margin: 0; }
 .faq .answer p + p { margin-top: 0.8rem; }
+.faq .answer a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 
 /* Related machines */
 .related-grid {
