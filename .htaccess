@@ -18,6 +18,10 @@ RewriteRule ^(.*)$ https://machines-for-sale.pk/$1 [R=301,L]
 # ---------- index.html → / ----------
 RewriteRule ^index\.html$ https://machines-for-sale.pk/ [R=301,L]
 
+# ---------- Renamed pages (301 permanent) ----------
+RewriteRule ^vibrator\.html$ /vibratory-finishing-machine.html [R=301,L]
+RewriteRule ^ur/vibrator\.html$ /ur/vibratory-finishing-machine.html [R=301,L]
+
 # ---------- DirectoryIndex ----------
 DirectoryIndex index.html urdu.html
 
