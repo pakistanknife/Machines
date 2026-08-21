@@ -23,9 +23,10 @@
   var links = document.querySelectorAll('a[data-whatsapp]');
   for (var i = 0; i < links.length; i++) {
     var a = links[i];
+    var phone = a.getAttribute('data-phone') || PHONE;
     var machine = a.getAttribute('data-machine');
     var text = machine ? buildMessage(machine) : buildGenericMessage();
-    a.href = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(text);
+    a.href = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(text);
   }
 
   // Mobile menu toggle
