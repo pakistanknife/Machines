@@ -1,9 +1,9 @@
 name: Update Sitemap Dates
 
 on:
-  schedule:
-    - cron: '0 6 1,15 * *'   # 1st and 15th of each month at 06:00 UTC
-  workflow_dispatch:           # manual trigger from GitHub Actions tab
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   update-sitemap:
@@ -13,18 +13,61 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Update lastmod dates in both sitemaps
+      - name: Update lastmod from real git commit dates
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-          sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>$TODAY</lastmod>|g" sitemap.xml
-          sed -i "s|<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}</lastmod>|<lastmod>$TODAY</lastmod>|g" sitemap-machines.xml
-          echo "Updated to $TODAY"
+          python3 << 'PYEOF'
+          import subprocess, re
+          from pathlib import Path
+
+          BASE_URL = "https://machines-for-sale.pk/"
+
+          def git_date(filepath):
+              result = subprocess.run(
+                  ["git", "log", "-1", "--format=%aI", "--", filepath],
+                  capture_output=True, text=True
+              )
+              date = result.stdout.strip()
+              return date[:10] if date else None  # YYYY-MM-DD
+
+          def process_block(m):
+              block = m.group(0)
+              loc_m = re.search(r'<loc>(.*?)</loc>', block)
+              if not loc_m:
+                  return block
+              url = loc_m.group(1).rstrip('/')
+              if url == BASE_URL.rstrip('/') or url == 'https://machines-for-sale.pk':
+                  filepath = 'index.html'
+              else:
+                  filepath = url.replace(BASE_URL, '', 1)
+              date = git_date(filepath)
+              if not date:
+                  return block
+              return re.sub(r'<lastmod>[^<]+</lastmod>', f'<lastmod>{date}</lastmod>', block)
+
+          for sitemap in ['sitemap.xml', 'sitemap-machines.xml']:
+              content = Path(sitemap).read_text(encoding='utf-8')
+              new_content = re.sub(r'<url>.*?</url>', process_block, content, flags=re.DOTALL)
+              if new_content != content:
+                  Path(sitemap).write_text(new_content, encoding='utf-8')
+                  print(f'Updated {sitemap}')
+              else:
+                  print(f'No changes in {sitemap}')
+          PYEOF
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add sitemap.xml sitemap-machines.xml
-          git diff --staged --quiet || git commit -m "chore: sitemap lastmod → $(date -u +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "chore: sitemap lastmod auto-updated from git dates [skip ci]"
           git push
+
+      - name: Ping Google Search Console
+        run: |
+          STATUS1=$(curl -s -o /dev/null -w "%{http_code}" "https://www.google.com/ping?sitemap=https://machines-for-sale.pk/sitemap.xml")
+          STATUS2=$(curl -s -o /dev/null -w "%{http_code}" "https://www.google.com/ping?sitemap=https://machines-for-sale.pk/sitemap-machines.xml")
+          echo "Google ping sitemap.xml: HTTP $STATUS1"
+          echo "Google ping sitemap-machines.xml: HTTP $STATUS2"
