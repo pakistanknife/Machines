@@ -16,10 +16,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Update lastmod from real git commit dates
+      - name: Update lastmod from real git commit dates + collect URLs
         run: |
           python3 << 'PYEOF'
-          import subprocess, re
+          import subprocess, re, json
           from pathlib import Path
 
           BASE_URL = "https://machines-for-sale.pk/"
@@ -32,13 +32,16 @@ jobs:
               date = result.stdout.strip()
               return date[:10] if date else None  # YYYY-MM-DD
 
+          all_urls = []
+
           def process_block(m):
               block = m.group(0)
               loc_m = re.search(r'<loc>(.*?)</loc>', block)
               if not loc_m:
                   return block
               url = loc_m.group(1).rstrip('/')
-              if url == BASE_URL.rstrip('/') or url == 'https://machines-for-sale.pk':
+              all_urls.append(loc_m.group(1))
+              if url in (BASE_URL.rstrip('/'), 'https://machines-for-sale.pk'):
                   filepath = 'index.html'
               else:
                   filepath = url.replace(BASE_URL, '', 1)
@@ -55,6 +58,11 @@ jobs:
                   print(f'Updated {sitemap}')
               else:
                   print(f'No changes in {sitemap}')
+
+          # Deduplicate and save URL list for IndexNow step
+          unique_urls = list(dict.fromkeys(all_urls))
+          Path('_indexnow_urls.json').write_text(json.dumps(unique_urls), encoding='utf-8')
+          print(f'Collected {len(unique_urls)} URLs for IndexNow')
           PYEOF
 
       - name: Commit and push if changed
@@ -65,9 +73,33 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: sitemap lastmod auto-updated from git dates [skip ci]"
           git push
 
-      - name: Ping Google Search Console
+      - name: Ping IndexNow
         run: |
-          STATUS1=$(curl -s -o /dev/null -w "%{http_code}" "https://www.google.com/ping?sitemap=https://machines-for-sale.pk/sitemap.xml")
-          STATUS2=$(curl -s -o /dev/null -w "%{http_code}" "https://www.google.com/ping?sitemap=https://machines-for-sale.pk/sitemap-machines.xml")
-          echo "Google ping sitemap.xml: HTTP $STATUS1"
-          echo "Google ping sitemap-machines.xml: HTTP $STATUS2"
+          URLS=$(cat _indexnow_urls.json)
+          PAYLOAD=$(python3 -c "
+          import json, sys
+          urls = json.loads(sys.stdin.read())
+          print(json.dumps({
+            'host': 'machines-for-sale.pk',
+            'key': '98e4f0d8f82aa92d25e19cc346c5be85',
+            'keyLocation': 'https://machines-for-sale.pk/98e4f0d8f82aa92d25e19cc346c5be85.txt',
+            'urlList': urls
+          }))
+          " <<< "$URLS")
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$PAYLOAD")
+          echo "IndexNow: HTTP $STATUS"
+          if [ "$STATUS" = "200" ] || [ "$STATUS" = "202" ]; then
+            echo "IndexNow accepted — Bing/Yandex/Google will recrawl shortly"
+          else
+            echo "IndexNow response: $STATUS (200 or 202 = success)"
+          fi
+
+      - name: Ping Google (legacy, belt-and-suspenders)
+        run: |
+          curl -s -o /dev/null -w "Google ping sitemap.xml: %{http_code}\n" \
+            "https://www.google.com/ping?sitemap=https://machines-for-sale.pk/sitemap.xml"
+          curl -s -o /dev/null -w "Google ping sitemap-machines.xml: %{http_code}\n" \
+            "https://www.google.com/ping?sitemap=https://machines-for-sale.pk/sitemap-machines.xml"
