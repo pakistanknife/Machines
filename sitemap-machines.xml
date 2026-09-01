@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://machines-for-sale.pk/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://machines-for-sale.pk/angle-grinder.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -97,7 +97,7 @@
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://machines-for-sale.pk/images/vertical-milling.jpg</image:loc>
-      <image:title>Used Vertical Milling Machine for Sale — Sialkot, Pakistan</image:title>
+      <image:title>Used Vertical Milling Machine (Sold) — Sialkot, Pakistan</image:title>
       <image:caption>Versatile vertical milling machine for tool, die, mold and surgical instrument work. Sialkot Used Machinery Co.</image:caption>
     </image:image>
   </url>
@@ -120,43 +120,43 @@
   </url>
   <url>
     <loc>https://machines-for-sale.pk/used-machinery-dealers-sialkot.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/wire-cut-edm-cnc.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/rotary-surface-grinder.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/vibratory-finishing-machine.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/drill-mitsubishi.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/rectifier-1000a.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/angle-grinder.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -168,8 +168,8 @@
   </url>
   <url>
     <loc>https://machines-for-sale.pk/ur/vertical-milling.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
