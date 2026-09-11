@@ -109,7 +109,22 @@ img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{fon
     "price": 500000,
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/UsedCondition",
-    "seller": { "@type": "Organization", "@id": "https://machines-for-sale.pk/#organization", "name": "Sialkot Used Machinery Co." }
+    "seller": { "@type": "Organization", "@id": "https://machines-for-sale.pk/#organization", "name": "Sialkot Used Machinery Co." },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "PK",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+    },
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": { "@type": "MonetaryAmount", "value": 0, "currency": "PKR" },
+      "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "PK", "addressRegion": "Punjab" },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY" },
+        "transitTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY" }
+      }
+    }
   }
 }
   </script>

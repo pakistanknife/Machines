@@ -92,3 +92,4 @@ Allow: /
 # Sitemaps and machine-readable index
 Sitemap: https://machines-for-sale.pk/sitemap.xml
 Sitemap: https://machines-for-sale.pk/sitemap-machines.xml
+Sitemap: https://machines-for-sale.pk/sitemap-images.xml
